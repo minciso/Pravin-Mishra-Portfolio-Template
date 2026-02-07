@@ -36,7 +36,18 @@ Original:
 Add this line (example):
 
 ```html
-<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
+        <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
+        <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate">07-Feb-2026</span> — By Michael Inciso</p>
+      </div>
+
+      <script>
+        const d = new Date();
+        const formattedDate = d.toISOString().split('T') [0];
+        document.getElementById("deployDate").textContent = formattedDate;
+      </script>
+
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
