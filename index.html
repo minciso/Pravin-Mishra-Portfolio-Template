@@ -599,22 +599,34 @@
       </div>
 
       <!-- Bottom -->
+      
+      <style>
+      /* This replaces all those repetitive span styles */
+      .footer-bottom {
+       font-size: 15px;
+       text-align: center;
+       line-height: 1.6; /* Adds a nice gap between lines */
+       }
+  
+      .footer-bottom p {
+       margin: 5px 0; /* Controls vertical spacing */
+       }
+      </style>
+
       <div class="footer-bottom">
-        <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
-        <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate">07-Feb-2026</span> — By Michael Inciso</p>
+       <p>© Pravin Mishra. All rights reserved.</p>
+       <p>Crafted with cloud excellence by Pravin Mishra</p>
+       <p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"></span> — By Michael Inciso</p>
       </div>
 
       <script>
-	const d = new Date();
-	const formattedDate = d.toISOString().split('T') [0];
-	document.getElementById("deployDate").textContent = formattedDate;
+        const d = new Date();
+        const formattedDate = d.toISOString().split('T') [0];
+        document.getElementById("deployDate").textContent = formattedDate;
       </script>
 
     </div>
   </footer>
-
-
 
 </body>
 
